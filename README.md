@@ -1,6 +1,8 @@
-# Conditional Rendering Discussion Question 
+# Discussion Questions: Conditional Rendering  
 
-Get together in groups and clone down this repository. For the purposes of this discussion question, you should work only out of `components/MenuBar.js` and `containers/MainBox.js`. Your end goal is to make this app function like so:
+Get together in groups and clone down this repository. For the purposes of this
+discussion question, you should work only out of `components/MenuBar.js` and
+`containers/MainBox.js`. Your end goal is to make this app function like so:
  
 ![alt text][example]
 
