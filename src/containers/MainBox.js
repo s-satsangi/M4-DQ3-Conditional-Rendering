@@ -4,7 +4,17 @@ import { Profile, Photos, Cocktails, Pokemon} from '../components/Pages.js'
 
 class MainBox extends React.Component {
 
+  state = {
+    currentChoice: "profile" 
+  }
 
+  handleChange = (e) => {
+    this.setState({currentChoice: e.target.id})
+    e.target.parentNode.childNodes.forEach( choice => choice.className = "item" )
+    e.target.className = "item active"
+  }
+
+ 
   render() {
 
     /*
@@ -13,11 +23,12 @@ class MainBox extends React.Component {
 
     */
 
-    const detailsToDisplay = <div>Hi, I'm a div!</div>
+    const detailsToDisplay = <div> {this.state.currentChoice}</div>
+
 
     return (
       <div>
-        <MenuBar />
+        <MenuBar handleChange={this.handleChange} currentChoice={this.state.currentChoice}/>
         {detailsToDisplay}
       </div>
     )
